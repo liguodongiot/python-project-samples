@@ -33,7 +33,7 @@ print("-------")
 # 一个语句的结束不需要使用分号
 # 如果想在一行中输入多个语句，可使用分号
 
-import sys; x = 'foo';sys.stdout.write(x + """
+import sys;x = 'foo';sys.stdout.write(x + """
 """)
 
 # 变量和集合
@@ -96,15 +96,15 @@ print(list)
 
 print("----元组----")
 
-tuple = ('abcd', 786, 2.23, 'john', 70.2)
+tuple2 = ('abcd', 786, 2.23, 'john', 70.2)
 tinytuple = (123, 'john')
 
-print(tuple)                # 打印整个元组
-print(tuple[0])             # 打印第一个元素
-print(tuple[1:3])           # 打印第2、3两个元素
-print(tuple[2:])            # 打印第3及其之后的元素
+print(tuple2)                # 打印整个元组
+print(tuple2[0])             # 打印第一个元素
+print(tuple2[1:3])           # 打印第2、3两个元素
+print(tuple2[2:])            # 打印第3及其之后的元素
 print(tinytuple * 2)        # 重复2遍
-print(tuple + tinytuple)    # 拼接
+print(tuple2 + tinytuple)    # 拼接
 
 # 字典
 # Python字典是一种哈希表型。由“键-值”对组成。
@@ -114,14 +114,14 @@ print(tuple + tinytuple)    # 拼接
 
 print("----字典----")
 
-dict = {}
-dict['one'] = "This is one"
-dict[2] = "This is two"
+dict2 = {}
+dict2['one'] = "This is one"
+dict2[2] = "This is two"
 
 tinydict = {'name': 'john', 'code': 6734, 'dept': 'sales'}
 
-print(dict['one'])          # Prints value for 'one' key
-print(dict[2])              # Prints value for 2 key
+print(dict2['one'])          # Prints value for 'one' key
+print(dict2[2])              # Prints value for 2 key
 print(tinydict)             # Prints complete dictionary
 print(tinydict.keys())      # Prints all the keys
 print(tinydict.values())    # Prints all the values
@@ -140,5 +140,44 @@ print(a)
 a.add(6)
 print(a)
 print(a.union(b))
+
+# 数据类型转换
+# 有时候，可能需要执行的内置类型之间的转换。类型之间的转换，只需使用类名作为函数。
+
+# int(x [,base])	        将x转换为整数。基数指定为base（进制）
+# long(x [,base] )	        将x转换为一个长整数。基数指定为base，
+# float(x)	                将x转换到一个浮点数。
+# complex(real [,imag])	    创建一个复数。
+# str(x)	                转换对象x为字符串表示形式。
+# eval(str)  	            计算一个表达式字符串，并返回一个对象。
+# tuple(s)	                把s（序列）转换为一个元组。
+# list(s)	                把s（序列）转换为一个列表。
+# set(s)	                把s（序列）转换为一个set集合。
+# dict(d)	                转成字典,d必须是（键，值）元组序列。
+
+print("----数据类型转换----")
+a = int('A', 16)
+print(a)
+
+listStr = ['Google', 'Taobao', 'Runoob', 'Baidu']
+list2tuple = tuple(listStr)
+print(list2tuple)
+
+aa = tuple(range(1, 10, 2))
+print(aa)
+
+b = tuple("hello")
+print(b)
+
+c = complex(1, 2)
+print(c)
+
+x = 1
+e = eval('x+1')
+print(e)
+
+f = dict([(1, 2), (3, 4), ('a', 100)])
+print(f)
+
 
 
