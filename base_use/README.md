@@ -131,6 +131,7 @@ if __name__ == '__main':
 
 ```
 **module_support**
+
 **module_main**
 
 
@@ -192,7 +193,11 @@ os.path.split('/home/swaroop/byte/code/poem.txt')
 终止当前进程：os.exit（）
 获取文件大小：os.path.getsize（filename）
 ```
+**io_main**
 
+**io_other**
+
+**io_write**
 
 ### 多线程
 ```
@@ -201,3 +206,14 @@ Python中的多线程是伪线程；
 Python中的多线程有多种实现方式，利用threading包实现是比较普遍的做法。
 ```
 **thread_main**
+
+### 面向对象
+
+**oop_main**
+
+**oop_private_field**
+
+**oop_destroy**
+
+**oop_inherit**
+
