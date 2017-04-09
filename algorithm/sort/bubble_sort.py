@@ -14,3 +14,5 @@ def simple_bubble_sort(lists):
 lists = [22, 786, 2.23, 33, 70.2, 199, 101, 77, 56.4]
 sortlst = simple_bubble_sort(lists)
 print(sortlst)
+
+
