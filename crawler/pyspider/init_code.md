@@ -1,7 +1,9 @@
+
+```
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-# Created on 2017-05-12 19:36:48
-# Project: baidu_index
+# Created on 2017-05-12 17:15:17
+# Project: taobaomm
 
 from pyspider.libs.base_handler import *
 
@@ -12,7 +14,7 @@ class Handler(BaseHandler):
 
     @every(minutes=24 * 60)
     def on_start(self):
-        self.crawl('www.baidu.com', callback=self.index_page)
+        self.crawl('__START_URL__', callback=self.index_page)
 
     @config(age=10 * 24 * 60 * 60)
     def index_page(self, response):
@@ -26,4 +28,5 @@ class Handler(BaseHandler):
             "title": response.doc('title').text(),
         }
 
+```
 
