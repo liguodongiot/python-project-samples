@@ -179,5 +179,7 @@ print(e)
 f = dict([(1, 2), (3, 4), ('a', 100)])
 print(f)
 
-
-
+page_no = "1"
+page_size = "30"
+url = 'http://ts.21cn.com/front/api/includePage/indexPcMorePost.do?order=ctime&pageNo=%s&pageSize=%s' % (page_no, page_size)
+print(url)
