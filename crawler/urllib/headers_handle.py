@@ -3,6 +3,7 @@
 # vim: set et sw=4 ts=4 sts=4 ff=unix fenc=utf8:
 # Author: guodong.li 
 # DateTime: 2017/5/12 11:15
+# PythonVersion: 2.7
 
 # 有些网站不会同意程序直接用上面的方式进行访问，
 # 如果识别有问题，那么站点根本不会响应，

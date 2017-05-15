@@ -3,6 +3,7 @@
 # vim: set et sw=4 ts=4 sts=4 ff=unix fenc=utf8:
 # Author: liguodong
 # Created on 2017-05-11 23:12:48
+# PythonVersion: 2.7
 
 import urllib
 import urllib2

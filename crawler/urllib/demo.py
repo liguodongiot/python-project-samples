@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
+# PythonVersion: 2.7
 
 import urllib
 import urllib2
