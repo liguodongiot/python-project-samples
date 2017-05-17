@@ -1,8 +1,5 @@
 
-第一表头 | 第二表头
------------- | -------------
-第一单元格内容 | 第二单元格内容
-第一列内容 | 第二列内容
+
 
 ### 利用phantomjs解决js问题
 
@@ -403,7 +400,7 @@ response.doc('.pti > .pdbt > .authi > em > span').attr('title')
 ```
 
 **CSS选择器**
-```
+
 |选择器				|示例					|示例说明                                                                                  |
 |:------------      | :--------             | :----                                                                                    |
 |.class 			|	.intro 				|	Selects all elements with class=”intro”                                                |
@@ -418,5 +415,8 @@ response.doc('.pti > .pdbt > .authi > em > span').attr('title')
 |[attribute$=value] |a[href$=”.pdf”] 	    |	Selects every <a> element whose href attribute value ends with “.pdf”                  |
 |[attribute*=value] |a[href*=”w3schools”] | 	Selects every <a> element whose href attribute value contains the substring “w3schools”|
 |:checked 			|input:checked 			|Selects every checked <input> element                                                     |
-```
 
+第一表头 | 第二表头
+------------ | -------------
+第一单元格内容 | 第二单元格内容
+第一列内容 | 第二列内容
