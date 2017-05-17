@@ -416,7 +416,4 @@ response.doc('.pti > .pdbt > .authi > em > span').attr('title')
 |[attribute*=value] |a[href*=”w3schools”] | 	Selects every <a> element whose href attribute value contains the substring “w3schools”|
 |:checked 			|input:checked 			|Selects every checked <input> element                                                     |
 
-第一表头 | 第二表头
------------- | -------------
-第一单元格内容 | 第二单元格内容
-第一列内容 | 第二列内容
+
