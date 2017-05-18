@@ -29,9 +29,10 @@ class Handler(BaseHandler):
 
     @config(age=10*24*60*60)
     def list_page(self, response):
+        # 处理当前页
         for each in response.doc('.title').items():
             self.crawl(each.attr.href, callback=self.detail_page, validate_cert=False)
-        # craw the next page
+        # craw the next page 抓取下一页
         next_page = response.doc('.next > a')
         self.crawl(next_page.attr.href, callback=self.list_page, validate_cert=False)
 

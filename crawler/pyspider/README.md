@@ -421,5 +421,9 @@ response.doc('.pti > .pdbt > .authi > em > span').attr('title')
 
 
 #### 示例代码：
-**doc_doubanzufang_demo**
-**doc_doubanmovie_demo**
+**doc_doubanzufang_demo（豆瓣租房）**
+**doc_doubanmovie_demo（豆瓣电影）**
+**doc_poi_page_demo（复杂选择及翻页处理）**
+
+
+
