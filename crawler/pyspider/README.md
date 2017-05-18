@@ -8,26 +8,29 @@
 但是其中的js代码，用phantomjs解决js代码执行问题。**
 
 #### 使用方法：
-**
-方法一：在self.crawl函数中添加fetch_type="js"调用phantomjs执行js代码。
-方法二：为函数添加参数@config(fetch_type="js")。
-**
+**方法一：在self.crawl函数中添加fetch_type="js"调用phantomjs执行js代码。**
+**方法二：为函数添加参数@config(fetch_type="js")。**
 
 #### 示例代码：
 **phantomjs_demo**
 
 
 ### 解析JSON数据
-**
 pyspider爬取的内容通过回调的参数response返回，response有多种解析方式。
-1、response.json用于解析json数据，
-2、response.doc返回的是PyQuery对象，
-3、response.etree返回的是lxml对象，
-4、response.text返回的是unicode文本，
-5、response.content返回的是字节码。
+
+1、response.json用于解析json数据
+
+2、response.doc返回的是PyQuery对象
+
+3、response.etree返回的是lxml对象
+
+4、response.text返回的是unicode文本
+
+5、response.content返回的是字节码
 
 本示例主要是利用response.json解析返回的json数据。
-**
+
+
 
 ```json
 {
@@ -417,3 +420,6 @@ response.doc('.pti > .pdbt > .authi > em > span').attr('title')
 |:checked 			|input:checked 			|Selects every checked <input> element                                                     |
 
 
+#### 示例代码：
+**doc_doubanzufang_demo**
+**doc_doubanmovie_demo**
