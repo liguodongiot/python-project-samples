@@ -15,7 +15,7 @@ pattern = re.compile(r'hello.*\!')
 match = pattern.match('hello, liguodong! How are you?')
 
 if match:
-    # 使用Match获得分组信息
+    # 使用Ma`tch获得分组信息
     print(match.group())
 
 
